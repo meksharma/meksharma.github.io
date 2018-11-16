@@ -1,0 +1,16 @@
+{
+  "name": "meksharma.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:meksharma/meksharma.github.io.git",
+  "author": "Harsha Ivaturi <isriharsha@atlassian.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^4.1.7",
+    "pug": "^2.0.3",
+    "sass": "^1.15.0"
+  },
+  "dependencies": {
+    "sanitize.css": "^8.0.0"
+  }
+}
