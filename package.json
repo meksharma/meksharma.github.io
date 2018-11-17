@@ -10,6 +10,9 @@
     "pug": "^2.0.3",
     "sass": "^1.15.0"
   },
+  "scripts": {
+    "build": "parcel build scr/index.pug --out-dir ./"
+  },
   "dependencies": {
     "sanitize.css": "^8.0.0"
   }
