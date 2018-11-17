@@ -1,0 +1,28 @@
+.header {
+  padding: 1rem 0;
+  display: flex;
+}
+
+.header__logo {
+  width: 1rem;
+  height: 1rem;
+}
+
+.header__links-wrapper {
+  flex-grow: 1;
+}
+
+.header__links {
+  display: flex;
+  justify-content: center;
+}
+
+.header__link {
+  text-decoration: none;
+  display: inline-block;
+  width: 20%;
+  &--active {
+    color: red;
+  }
+}
+
