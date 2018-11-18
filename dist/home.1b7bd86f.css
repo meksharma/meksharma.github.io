@@ -23,6 +23,17 @@
 .intro__links {
   margin-top: 3rem;
 }
+.intro__link {
+  color: #252626;
+  text-decoration: none;
+}
+.intro__link:hover {
+  text-decoration: underline;
+}
+.intro__link:active {
+  text-decoration: none;
+  color: #707474;
+}
 .intro__link:not(last-of-type) {
   font-weight: 600;
   font-size: 0.8rem;

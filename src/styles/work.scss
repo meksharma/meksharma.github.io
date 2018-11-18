@@ -1,11 +1,43 @@
 @import 'constants.scss';
 
 .work {
-  margin: 12rem 0 0;
+  margin: 6rem 0 0;
+  padding: 8rem 0 0;
 
   &__snippet {
     display: flex;
     justify-content: space-between;
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+    &:not(:first-of-type) {
+      margin-top: 12rem;
+    }
+    &:last-of-type {
+      margin-bottom: 6rem;
+    }
+
+    // overrides
+    &.code-unnati {
+      img {
+        height: 24rem;
+        width: auto;
+        transform: translate(9.5rem, -5rem);
+      }
+      .work__photo {
+        background-color: $cu;
+      }
+    }
+    &[class*='project-staffing-&-analysis'] {
+      .work__photo {
+        background-color: $psa;
+      }
+    }
+  }
+
+  &__photo-wrapper, &__details {
+    flex: auto;
+    margin: 0 3rem ;
   }
 
   &__photo {
@@ -16,6 +48,41 @@
     > img {
       width: 34rem;
       transform: translate(5rem, -5rem);
+    }
+  }
+
+  &__description {
+    > br {
+      margin-bottom: 1rem;
+    }
+  }
+  &__details {
+    padding-left: 5rem;
+    width: 15rem;
+  }
+  &__company {
+    color: $highlightedText;
+  }
+  &__title {
+    margin: 0.8rem 0;
+    font-size: 1.5rem;
+  }
+  &__subtitle {
+    margin: 0.8rem 0;
+    color: $lightText;
+    font-size: 0.6rem;
+  }
+
+  &__url {
+    text-decoration: none;
+    color: $workLink;
+
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active {
+      text-decoration: none;
+      color: $activeWorkLink;
     }
   }
 }

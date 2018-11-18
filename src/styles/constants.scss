@@ -6,11 +6,19 @@ $cinderella: #FDE1D7;
 $tarawera: #083A4F;
 $glacier: #81AFC6;
 $goldenDream: #EAD42D;
+$cashmere: #E5B0A3;
 
 // Color usage
 $activeLink: $neptune;
+
 $headerLink: $capeCod;
 $activeHeaderLink: darken($activeLink, 20%);
+
+$workLink: $cashmere;
+$activeWorkLink: darken($workLink, 20%);
+
+$footerLink: $frenchGrey;
+$activeFooterLink: darken($footerLink, 20%);
 
 $highlightedText: $neptune;
 $darkText: $shark;

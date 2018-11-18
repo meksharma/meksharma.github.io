@@ -1,10 +1,12 @@
 mixin workSnippet(company, title, subTitle, description, projectUrl, photoUrl)
-  .work__snippet
-    .work__photo
-      img(src=photoUrl title=title)
-    .work_details
+  - var titleClass = title.split(' ').join('-').toLowerCase();
+  div(class="work__snippet "+titleClass)
+    .work__photo-wrapper
+      .work__photo
+        img(src=photoUrl title=title)
+    .work__details
       .work__company= company
       h3.work__title= title
-      h6.work__subTitle= subTitle
-      p.work__description= description
+      h6.work__subtitle= subTitle
+      p.work__description!= description
       a.work__url(href=projectUrl) View case study

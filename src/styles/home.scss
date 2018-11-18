@@ -31,11 +31,23 @@ $introHeight: '100vh - 8rem - #{$logo}';
   &__links {
     margin-top: 3rem;
   }
-  &__link:not(last-of-type) {
-    font-weight: 600;
-    font-size: 0.8rem;
-    padding-right: 2rem;
-  }
+  &__link{
+    color: $darkText;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active {
+      text-decoration: none;
+      color: lighten($darkText, 30%);
+    }
+
+    &:not(last-of-type) {
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding-right: 2rem;
+    }
+}
 
   &__divider {
     display: block;
@@ -73,3 +85,4 @@ $introHeight: '100vh - 8rem - #{$logo}';
     }
   }
 }
+

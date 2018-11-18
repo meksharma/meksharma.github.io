@@ -1,0 +1,23 @@
+@import 'constants.scss';
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+
+  &__link {
+    display: inline-block;
+    width: 20rem;
+    text-align: center;
+    text-decoration: none;
+    color: $footerLink;
+
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active {
+      text-decoration: none;
+      color: $activeFooterLink;
+    }
+  }
+}
