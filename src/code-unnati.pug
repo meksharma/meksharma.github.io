@@ -1,0 +1,12 @@
+include mixins/header
+
+doctype html
+html
+  include includes/head
+  body
+    .smooth-scroll
+      .wrapper
+        +header('work')
+        main.main
+          h1.coming-soon Coming soon
+        include includes/footer

@@ -12,5 +12,15 @@
 .wrapper {
   max-width: 80rem;
   margin: 0 auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
+.main {
+  flex-grow: 1;
+}
+
+.coming-soon {
+  text-align: center;
+}
