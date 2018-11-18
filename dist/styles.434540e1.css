@@ -595,6 +595,7 @@ textarea,
   right: 0;
   scroll-behavior: smooth;
   overflow-y: auto;
+  overflow-x: hidden;
   min-width: 100vw;
 }
 
