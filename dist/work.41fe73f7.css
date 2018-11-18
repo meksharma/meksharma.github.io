@@ -1,0 +1,16 @@
+.work {
+  margin: 12rem 0 0;
+}
+.work__snippet {
+  display: flex;
+  justify-content: space-between;
+}
+.work__photo {
+  width: 20rem;
+  height: 20rem;
+  background-color: #083A4F;
+}
+.work__photo > img {
+  width: 34rem;
+  transform: translate(5rem, -5rem);
+}

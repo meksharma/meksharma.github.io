@@ -1,0 +1,14 @@
+include ../mixins/link
+
+mixin header(activeLink)
+  header.header
+    .header__logo
+      a(href="/")
+        img(src="/logo.svg")
+    .header__links-wrapper
+      .header__links
+        +headerLink('work', '/#work-section', 'Work', activeLink === 'work')
+        +headerLink('resume', '/resume.pdf', 'Resume')
+        +headerLink('about', '/about.pug', 'About', activeLink === 'about')
+
+

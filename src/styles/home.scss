@@ -1,0 +1,75 @@
+@import 'constants.scss';
+$introHeight: '100vh - 8rem - #{$logo}';
+
+.intro {
+  padding: 3rem;
+  height: calc(#{$introHeight});
+  position: relative;
+
+  &__description {
+    font-size: 1.6rem;
+    font-weight: 800;
+    width: 60%;
+    margin-top: 0;
+
+    &--interaction {
+      @extend .intro__description;
+      color: $darkText;
+    }
+    &--product {
+      @extend .intro__description;
+      color: $lightText;
+    }
+  }
+
+  &__name {
+    color: $highlightedText;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  &__links {
+    margin-top: 3rem;
+  }
+  &__link:not(last-of-type) {
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding-right: 2rem;
+  }
+
+  &__divider {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #FDE1D7;
+    margin: 4rem 0 0;
+    padding: 0;
+    width: 90vw;
+    float: right;
+    transform: translateX(50vw)
+  }
+
+  &__scroll {
+    position: absolute;
+    top: calc(#{$introHeight} + 2rem);
+    left: 50%;
+    &:hover {
+     cursor: pointer;
+    }
+
+    &::before {
+      border-color: $highlightedText;
+      border-style: solid;
+      border-width: 0.15rem 0.15rem 0 0;
+      content: '';
+      display: inline-block;
+      height: 1rem;
+      width:1rem;
+      left: 0.15rem;
+      position: relative;
+      top: 0.15rem;
+      transform: rotate(135deg);
+      vertical-align: top;
+    }
+  }
+}

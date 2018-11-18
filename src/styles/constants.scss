@@ -1,0 +1,27 @@
+$neptune: #76AAB6;
+$capeCod: #525353;
+$shark: #252626;
+$frenchGrey: #BABABB;
+$cinderella: #FDE1D7;
+$tarawera: #083A4F;
+$glacier: #81AFC6;
+$goldenDream: #EAD42D;
+
+// Color usage
+$activeLink: $neptune;
+$headerLink: $capeCod;
+$activeHeaderLink: darken($activeLink, 20%);
+
+$highlightedText: $neptune;
+$darkText: $shark;
+$lightText: $frenchGrey;
+
+$divider: $cinderella;
+
+$pdm: $tarawera;
+$psa: $glacier;
+$cu: $goldenDream;
+
+
+// dimensions
+$logo: 2rem;

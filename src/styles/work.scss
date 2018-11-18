@@ -1,0 +1,21 @@
+@import 'constants.scss';
+
+.work {
+  margin: 12rem 0 0;
+
+  &__snippet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__photo {
+    width: 20rem;
+    height: 20rem;
+    background-color: $pdm;
+
+    > img {
+      width: 34rem;
+      transform: translate(5rem, -5rem);
+    }
+  }
+}

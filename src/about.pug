@@ -1,9 +1,9 @@
+include mixins/header
+
 doctype html
 html
-  head
-    link(rel="stylesheet" href="./styles/index.scss")
-    link(rel="shortcut icon" type="image/png" href="./favicon.png")
-    title Mehak's Portfolio
+  include includes/head
   body
-    include includes/header.pug
-    main About page
+    .wrapper
+      +header('about')
+      include includes/about

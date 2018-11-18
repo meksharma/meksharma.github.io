@@ -1,0 +1,10 @@
+mixin workSnippet(company, title, subTitle, description, projectUrl, photoUrl)
+  .work__snippet
+    .work__photo
+      img(src=photoUrl title=title)
+    .work_details
+      .work__company= company
+      h3.work__title= title
+      h6.work__subTitle= subTitle
+      p.work__description= description
+      a.work__url(href=projectUrl) View case study

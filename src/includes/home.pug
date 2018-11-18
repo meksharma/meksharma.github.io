@@ -1,0 +1,30 @@
+include ../mixins/work-snippet
+
+- var projects = []
+// - projects.push({company: 'SAP', title: 'Personal Data Manager', subtitle:'Iteraction Design | Jun 2017 - Jan 2018', description: 'Loren Ipsum', projectUrl: '/case-study/personal-data-manager', photoUrl: '/assets/personal-data-manager.png'})
+
+
+link(rel="stylesheet" href="/styles/home.scss")
+main.main
+  section#intro.intro
+    h3.intro__name Mehak Sharma
+
+    p.intro__description--interaction
+      | Interaction designer with industry experience in Prototyping,  User Research, Usability Testing , Design Thinking.
+    p.intro__description--product
+      | Product designer with industry experience in Prototyping, Trends, Communication Design and Illustration.
+
+    .intro__links
+      a.intro__link Get in touch
+      a.intro__link View Work
+
+    hr.intro__divider
+    a.intro__scroll
+
+  link(rel="stylesheet" href="/styles/work.scss")
+  section#work.work
+    each project in projects
+      +workSnippet( project.company, project.title, project.subtitle, project.description, project.projectUrl, project.photoUrl)
+script(type="text/javascript" defer async src="/js/index.js")
+
+

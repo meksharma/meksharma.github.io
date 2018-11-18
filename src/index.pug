@@ -1,12 +1,9 @@
+include mixins/header
+
 doctype html
 html
-  head
-    link(rel="stylesheet" href="/styles/index.scss")
-    link(rel="shortcut icon" type="image/svg" href="./favicon.png")
-    title Mehak's Portfolio
+  include includes/head
   body
-    include includes/header.pug
-    h1 Hello World!
-    p Welcome to my Portfolio
-    script(type="text/javascript" defer async src="/js/index.js")
-
+    .wrapper
+      +header('work')
+      include includes/home
