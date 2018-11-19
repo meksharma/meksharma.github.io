@@ -8,7 +8,7 @@ mixin header(activeLink)
     nav.header__links-wrapper
       .header__links
         +headerLink('work', '/#work-section', 'Work', activeLink === 'work')
-        +headerLink('resume', '/resume.pdf', 'Resume')
+        +headerLink('resume', '/resume.pdf', 'Resume')(target="_blank")
         +headerLink('about', '/about.pug', 'About', activeLink === 'about')
 
 

@@ -1,9 +1,9 @@
 mixin link(id, href, text)
-  a(id=id href=href title=text class=attributes.class)= text
+  a(id=id href=href title=text)&attributes(attributes)= text
 
 mixin headerLink(id, href, text, isActive)
   if isActive
-    +link(id, href, text)(class="header__link--active")
+    +link(id, href, text)(class="header__link--active")&attributes(attributes)
   else
-    +link(id, href, text)(class="header__link")
+    +link(id, href, text)(class="header__link")&attributes(attributes)
 
