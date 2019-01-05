@@ -1,7 +1,11 @@
 link(rel="stylesheet" href="/styles/footer.scss")
+include ../mixins/icon
 
 footer.footer
   .footer__links
-    a.footer__link(href="//www.linkedin.com/in/meksharma") Linkdin
-    a.footer__link(href="//www.instagram.com/art_cheriemisfits/") Instagram
-    a.footer__link(href="//www.medium.com/@meksharma") Medium
+    a.footer__link(href="//www.linkedin.com/in/meksharma" title="Linkedin")
+      span.footer__icon.linkedin
+    a.footer__link(href="//www.instagram.com/art_cheriemisfits/" title="Instagram")
+      span.footer__icon.instagram
+    a.footer__link(href="//www.medium.com/@meksharma" title="Medium")
+      span.footer__icon.medium

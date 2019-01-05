@@ -7,17 +7,39 @@
 
   &__link {
     display: inline-block;
-    width: 20rem;
-    text-align: center;
     text-decoration: none;
     color: $footerLink;
+    margin-right: 3rem;
 
     &:hover {
       text-decoration: underline;
     }
     &:active {
       text-decoration: none;
-      color: $activeFooterLink;
+    }
+  }
+
+  &__icon {
+    background-color: $footerLink;
+    height: 1.5rem;
+    width: 1.5rem;
+    mask-size: cover;
+    display: inline-block;
+
+    &:hover {
+      background-color: $activeFooterLink;
+    }
+
+    &.instagram {
+      mask-image: url('/assets/instagram.svg')
+    }
+
+    &.medium {
+      mask-image: url('/assets/medium.svg')
+    }
+
+    &.linkedin {
+      mask-image: url('/assets/linkedin.svg')
     }
   }
 }

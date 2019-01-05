@@ -1,0 +1,6 @@
+mixin icon(name, fill)
+    - var size = 24;
+
+    span.icon(aria-hidden="true")&attributes(attributes)
+        svg(viewBox='0 0 ' + size + ' ' + size width=size height=size )
+          use(xlink:href='/assets/'+name+'.svg')
