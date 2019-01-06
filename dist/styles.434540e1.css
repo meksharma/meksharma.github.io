@@ -623,6 +623,7 @@ textarea,
 .header__logo {
   width: 2rem;
   height: 2rem;
+  margin-left: 3rem;
 }
 
 .header__links-wrapper {

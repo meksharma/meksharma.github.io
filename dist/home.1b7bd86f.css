@@ -4,10 +4,12 @@
   position: relative;
 }
 .intro__description, .intro__description--product, .intro__description--interaction {
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   font-weight: 800;
   width: 60%;
   margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .intro__description--interaction {
   color: #252626;
@@ -18,10 +20,16 @@
 .intro__name {
   color: #76AAB6;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .intro__links {
   margin-top: 3rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .intro__link {
   color: #252626;
