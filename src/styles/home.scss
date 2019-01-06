@@ -49,18 +49,6 @@ $introHeight: '100vh - 8rem - #{$logo}';
     }
 }
 
-  &__divider {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 2px solid #FDE1D7;
-    margin: 4rem 0 0;
-    padding: 0;
-    width: 90vw;
-    float: right;
-    transform: translateX(50vw)
-  }
-
   &__scroll {
     position: absolute;
     top: calc(#{$introHeight} + 2rem);
