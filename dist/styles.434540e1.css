@@ -618,21 +618,20 @@ textarea,
 .header {
   padding: 1rem 0;
   display: flex;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .header__logo {
   width: 2rem;
   height: 2rem;
-  margin-left: 3rem;
-}
-
-.header__links-wrapper {
-  flex-grow: 1;
 }
 
 .header__links {
   display: flex;
+  flex-grow: 1;
   justify-content: center;
+  margin-left: -2rem;
 }
 
 .header__link, .header__link--active {

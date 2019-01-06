@@ -5,10 +5,9 @@ mixin header(activeLink)
     .header__logo
       a(href="/")
         img(src="/logo.svg")
-    nav.header__links-wrapper
-      .header__links
-        +headerLink('work', '/#work-section', 'Work', activeLink === 'work')
-        +headerLink('resume', '//www.dropbox.com/s/89jfoccg36b3mo2/Mehak%20Sharma_Resume_2018_.pdf?dl=0', 'Resume')(target="_blank")
-        +headerLink('about', '/about.pug', 'About', activeLink === 'about')
+    nav.header__links
+      +headerLink('work', '/#work-section', 'Work', activeLink === 'work')
+      +headerLink('resume', '//www.dropbox.com/s/89jfoccg36b3mo2/Mehak%20Sharma_Resume_2018_.pdf?dl=0', 'Resume')(target="_blank")
+      +headerLink('about', '/about.pug', 'About', activeLink === 'about')
 
 
