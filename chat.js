@@ -73,9 +73,9 @@
         "Mehak is currently based in Shanghai, China. She has lived and worked across Bangalore, Thailand, and China, and she is open to relocating for the right design leadership opportunity.",
     },
     {
-      keys: ["contact", "hire", "email", "reach", "linkedin", "available", "opportunit", "new role", "leadership role"],
+      keys: ["contact", "hire", "email", "reach", "linkedin", "available", "availability", "notice", "start date", "when can", "when could", "join", "opportunit", "new role", "leadership role"],
       answer:
-        "Mehak is open to design leadership roles globally, including opportunities that involve relocation. Interested in starting a conversation? Reach her at **meksharma@gmail.com** or through LinkedIn at **linkedin.com/in/meksharma**.",
+        "Mehak is currently open to design leadership opportunities and can start following a **one-month notice period**. To discuss a potential fit, reach her at **meksharma@gmail.com** or on LinkedIn at **linkedin.com/in/meksharma**.",
     },
   ];
 
