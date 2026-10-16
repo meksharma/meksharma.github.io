@@ -3,7 +3,7 @@
 A personal portfolio website for Mehak Sharma, a product designer focused on
 trustworthy AI experiences, design systems, and thoughtful interaction design.
 
-**[View the portfolio website](https://meksharma.github.io/mehaks-portfolio-showcase-2026/)**
+**[View the portfolio website](https://meksharma.github.io/)**
 
 ## Portfolio Preview
 
@@ -22,6 +22,10 @@ product design work in a responsive, interactive website.
 - Design philosophy and working principles
 - Selected product design case studies
 - Contact and professional links
+
+Vertical scrolling follows normal browser behavior without section snapping.
+Navigation links retain smooth scrolling; the builds reel keeps its horizontal
+scroll interaction.
 
 ## Local Preview
 

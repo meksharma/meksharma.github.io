@@ -94,36 +94,6 @@ const initReveals = () => {
   }
 };
 
-const initScrollSnap = () => {
-  if (navigator.maxTouchPoints > 0 || window.matchMedia("(pointer: coarse)").matches) return;
-
-  const snapPages = Array.from(document.querySelectorAll("#about, #background, #approach, #builds, .project-cover, #contact"));
-  if (!snapPages.length) return;
-
-  let currentPage = snapPages.reduce((closest, page) => {
-    const distance = Math.abs(page.getBoundingClientRect().top - 64);
-    return !closest || distance < closest.distance ? { page, distance } : closest;
-  }, null).page;
-  currentPage.classList.add("is-snap-current");
-
-  let settleTimer = null;
-  const updateCurrentPage = () => {
-    const alignedPage = snapPages.find((page) => {
-      const top = page.getBoundingClientRect().top;
-      return Math.min(Math.abs(top), Math.abs(top - 64)) < 12;
-    });
-    if (!alignedPage || alignedPage === currentPage) return;
-    currentPage.classList.remove("is-snap-current");
-    currentPage = alignedPage;
-    currentPage.classList.add("is-snap-current");
-  };
-
-  window.addEventListener("scroll", () => {
-    window.clearTimeout(settleTimer);
-    settleTimer = window.setTimeout(updateCurrentPage, 180);
-  }, { passive: true });
-};
-
 const backToTop = document.getElementById("back-to-top");
 if (backToTop) {
   const toggleBackToTop = () => {
@@ -341,7 +311,6 @@ const initBuildsReel = () => {
 const startPage = () => {
   document.body.classList.add("loaded");
   initReveals();
-  initScrollSnap();
   initProjectImageViewer();
   initBuildsReel();
 };
