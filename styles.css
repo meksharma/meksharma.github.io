@@ -806,6 +806,111 @@ h2 {
   100% { transform: translateX(100%); }
 }
 
+.specialties {
+  display: none;
+}
+
+.specialties-title {
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+  font-size: var(--type-body-large);
+  font-weight: 400;
+}
+
+.specialties-list {
+  display: grid;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.specialties-list li {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 0.75rem;
+  font-size: var(--type-body-large);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.specialties-list svg {
+  flex: 0 0 auto;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--company-accent);
+}
+
+.specialties-list svg > * {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.background-wrap.in-view .specialties-list li:nth-child(1) svg {
+  animation: specialtySpark 2.4s ease-in-out 0.1s;
+}
+
+.background-wrap.in-view .specialties-list li:nth-child(2) svg path {
+  animation: specialtyCursor 1.8s ease-in-out 0.6s 2;
+}
+
+.background-wrap.in-view .specialties-list li:nth-child(3) svg {
+  animation: specialtyCode 2.1s ease-in-out 0.3s 2;
+}
+
+.background-wrap.in-view .specialties-list li:nth-child(4) svg circle {
+  animation: specialtyLeader 1.6s ease-in-out 1.1s 2;
+}
+
+.specialties-list li:hover svg {
+  transform: scale(1.1);
+}
+
+@keyframes specialtySpark {
+  45% { transform: rotate(90deg) scale(1.15); }
+  75% { transform: rotate(180deg); }
+  100% { transform: rotate(180deg); }
+}
+
+@keyframes specialtyCursor {
+  40% { transform: translate(-4px, -4px); }
+  65% { transform: translate(-4px, -4px) scale(0.85); }
+}
+
+@keyframes specialtyCode {
+  30% { transform: scaleX(1.18); }
+  65% { transform: scaleX(0.9) translateY(-2px); }
+}
+
+@keyframes specialtyLeader {
+  40% { transform: translateY(-4px); }
+  70% { transform: translateY(1px); }
+}
+
+@media (min-width: 1024px) {
+  .background-section .background-wrap {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    align-items: center;
+    column-gap: clamp(6rem, 12vw, 13rem);
+  }
+
+  .specialties {
+    display: block;
+    align-self: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .background-wrap.in-view .specialties-list svg,
+  .background-wrap.in-view .specialties-list svg > *,
+  .specialties-list li:hover svg {
+    animation: none !important;
+    transform: none;
+  }
+}
+
 /* ── Background ── */
 .background-section {
   background: transparent;

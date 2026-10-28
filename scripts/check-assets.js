@@ -2,7 +2,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const root = path.resolve(__dirname, "..");
-const htmlFiles = ["index.html", "404.html"];
+const htmlFiles = ["index.html", "404.html", "cv.html", "portfolio-share.html"];
 const missing = new Set();
 
 const isLocalReference = (reference) => {
